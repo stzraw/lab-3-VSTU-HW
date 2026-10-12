@@ -7,7 +7,6 @@
 int main()
 {
 	system("chcp 65001");
-    //setlocale(LC_CTYPE, "RUS");
 
     float h, m, g, pw;
 	puts("Введите высоту падения (м):");
