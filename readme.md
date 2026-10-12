@@ -47,7 +47,6 @@ https://github.com/stzraw/lab-3-VSTU-HW/blob/main/lab_3HW_schema.png
 int main()
 {
 	system("chcp 65001");
-    //setlocale(LC_CTYPE, "RUS");
 
     float h, m, g, pw;
 	puts("Введите высоту падения (м):");
