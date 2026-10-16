@@ -1,23 +1,37 @@
+#define _CRT_SECURE_NO_DEPRECATE
 #include <locale.h>
 #include <stdio.h>
-#include <stdlib.h> 
-#define      R       6371000.0f
-#define      GM      3.986004418e14f
+#include <stdlib.h>
+
+#define R 6371000.0
+#define GM 3.986004418e14
+
+double calc_gravity(double h, double m);
 
 int main()
 {
-	system("chcp 65001");
+    double h, m;
+    double pw;
 
-    float h, m, g, pw;
-	puts("Введите высоту падения (м):");
-	scanf_s("%f", &h);
+    setlocale(LC_CTYPE, "RUS");
+
+    puts("Введите высоту падения (м):");
+    scanf("%lf", &h);
 
     puts("Введите массу тела (кг):");
-	scanf_s("%f", &m);
+    scanf("%lf", &m);
+    pw = calc_gravity(h, m);
+
+    printf("Сила тяжести равна: %.2f Н\n", pw);
+    return 0;
+}
+
+double calc_gravity(double h, double m)
+{
+    double g;
+    double force;
 
     g = GM / ((R + h) * (R + h));
-    pw = m * g;
-    
-	printf("Сила тяжести равна: %.2f Н\n", pw);
-	return 0;
+    force = m * g;
+    return force;
 }
