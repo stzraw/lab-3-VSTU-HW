@@ -30,9 +30,9 @@
 10. **Конец**
 
 ### Блок-схема
-![Блок-схема алгоритма](lab_3HW_schema.png) 
+![Блок-схема алгоритма](lab_3_schema.pravki.png) 
 
-https://github.com/stzraw/lab-3-VSTU-HW/blob/main/lab_3HW_schema.png
+[https://github.com/stzraw/lab-3-VSTU-HW/blob/main/lab_3HW_schema.png](https://github.com/stzraw/lab-3-VSTU-HW/blob/main/lab_3_schema.pravki.png)
 
 
 ## 2. Реализация программы
